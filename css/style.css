@@ -1,0 +1,290 @@
+body {
+  scroll-behavior: smooth;
+}
+/* Navbar background transition */
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #000 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#about p {
+  line-height: 1.7;
+}
+
+#about ul li {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  #about .text-center {
+    padding: 0 1rem;
+  }
+}
+
+#packages .card-title {
+  font-weight: 600;
+}
+
+#packages ul li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+
+.image-wrapper {
+  height: 220px; /* consistent height for all images */
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    height: 180px;
+  }
+}
+
+/* Navbar scroll effect */
+#mainNavbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-scrolled {
+  background-color: #000 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  border-radius: 0 0 1rem 1rem;
+}
+
+/* Active link highlight */
+.navbar-nav .nav-link.active {
+  background-color: #198754;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+
+/* Card hover animation */
+.package-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Ribbon-style price tag */
+.ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 1;
+}
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  padding: 5px 0;
+  background: #28a745;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  transform: rotate(45deg);
+  top: 25px;
+  right: -40px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px; /* Fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.gallery-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  gap: 0; /* spacing handled via justify-content */
+}
+
+/* .testimonial-card {
+  flex: 0 0 30%;
+  max-width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+} */
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.stars {
+  color: #fbbf24;
+  margin-bottom: 0.5rem;
+}
+.location {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+
+  .custom-accordion .accordion-button {
+    background-color: #fff;
+    font-weight: 500;
+    box-shadow: none;
+    padding: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .custom-accordion .accordion-button:not(.collapsed) {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+
+  .custom-accordion .accordion-button::after {
+    display: none;
+  }
+
+  .custom-accordion .accordion-icon {
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-button.collapsed .accordion-icon {
+    transform: rotate(0deg);
+    content: '+';
+  }
+
+  .accordion-button:not(.collapsed) .accordion-icon {
+    transform: rotate(45deg);
+    content: '−';
+  }
+
+  .accordion-body {
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+/* floating whats app */
+
+/* .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+} */
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-float {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    /* background-color: #25D366; */
+    /* color: white; */
+    /* text-decoration: none; */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.3); */
+    /* transition: transform 0.3s ease; */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-text {
+    position: absolute;
+    right: 70px;
+    background-color: #25D366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+}
+
+.whatsapp-float:hover .whatsapp-text {
+    opacity: 1;
+    transform: translateX(0);
+}
