@@ -297,3 +297,6 @@ body {
         }
     }
 
+.subNavbar {
+        z-index: -1; /* Same as Bootstrap modal, higher than dropdowns/tooltips */
+    }
