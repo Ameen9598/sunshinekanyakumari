@@ -60,4 +60,11 @@
 
 */
 
-
+window.addEventListener('scroll', function () {
+    const subNavbar = document.querySelector('.subNavbar');
+    if (window.scrollY > 120) {
+      subNavbar.style.display = 'none'; // or use classList.add('hidden')
+    } else {
+      subNavbar.style.display = 'block'; // or classList.remove('hidden')
+    }
+  });
