@@ -95,12 +95,43 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top border-bottom border-2 border-success" id="mainNavbar">
   <div class="container">
     <!-- Logo added here -->
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="">
+    <!-- <a class="navbar-brand fw-bold d-flex align-items-center" href="">
       <img src="images/Travel.png" 
           alt="ExploreWorld Logo" 
           class="img-fluid me-2" 
           style="max-height: 50px;">
-    </a>
+    </a> -->
+
+    <!-- <div class="container"> -->
+  <!-- <div class="row align-items-center">
+    <div class="col-auto">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="images/Travel.png" 
+             alt="ExploreWorld Logo" 
+             class="img-fluid logo-img">
+      </a>
+    </div>
+  </div> -->
+<!-- </div> -->
+
+
+<!-- <div class="container"> -->
+  <div class="row align-items-center">
+    <div class="col-auto">
+      <a class="navbar-brand d-flex align-items-center" href="">
+        <img src="images/Travel.png" 
+             alt="ExploreWorld Logo" 
+             class="img-fluid logo-img">
+      </a>
+    </div>
+  </div>
+<!-- </div> -->
+
+<style>
+
+</style>
+
+
 
     <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
@@ -218,21 +249,42 @@
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0 package-card position-relative">
     
-          <div class="ribbon"><span>₹14,999</span></div>
+          <!-- <div class="ribbon"><span>₹14,999</span></div> -->
 
           <div class="card-img-top image-wrapper">
-            <img src="images/goa.jpg" alt="Goa Getaway" class="img-fluid w-100 h-100 object-fit-cover">
+            <img src="images/tri.jpg" alt="Goa Getaway" class="img-fluid w-100 h-100 object-fit-cover">
           </div>
 
           <div class="card-body text-center">
-            <h5 class="card-title">Goa Getaway</h5>
-            <p class="card-text text-muted">3 Nights, 4 Days | Beach Resort Stay</p>
+            <h5 class="card-title">Kanyakumari Package</h5>
+            <p class="card-text text-muted">1 Days | Customizable Days</p>
             <ul class="list-unstyled small mb-3">
-              <li>🌴 Beach Activities</li>
-              <li>🍤 Local Cuisine</li>
-              <li>🚗 Guided Tours</li>
+              <li class="fs-6 text-decoration-underline text-success"><b>Locations List</b></li>
+              <li>Kanyakumari Beach</li>
+              <li>Thiruvalluvar Statue</li>
+              <li>Vivekananda Rock Memorial</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
+
+            <!-- Collapse section -->
+            <div class="collapse" id="kanyakumariseemore">
+              <ul class="list-unstyled small mb-3">
+                <li>Padmanabapuram Palace</li>
+                <li>Mathoor Adiquet/Hanging Bridge</li>
+                <li>Thirparappu Waterfalls</li>
+                <li>Nagaraja Temple</li>
+              </ul>
+            </div>
+
+                        <!-- See More button -->
+                        <button class="btn btn-outline-primary btn-sm" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#kanyakumariseemore"
+                    aria-expanded="false"
+                    aria-controls="kanyakumariseemore"
+                    id="seeMoreBtn">
+              See More
+            </button>
+
           </div>
         </div>
       </div>
@@ -241,20 +293,40 @@
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0 package-card position-relative">
             
-          <div class="ribbon"><span>₹7,999</span></div>
+          <!-- <div class="ribbon"><span>₹7,999</span></div> -->
           <div class="card-img-top image-wrapper">
             <img src="images/kerala.jpg" alt="Goa Package" class="img-fluid w-100 h-100 object-fit-cover">
           </div>
 
           <div class="card-body text-center">
-            <h5 class="card-title">Kerala Backwaters</h5>
-            <p class="card-text text-muted">5 Nights | Munnar, Alleppey & Houseboat</p>
+            <h5 class="card-title">Kerala Package</h5>
+            <p class="card-text text-muted">1 Days | Customizable Days</p>
             <ul class="list-unstyled small mb-3">
-              <li>⛵ Houseboat Stay</li>
-              <li>🌿 Tea Gardens</li>
-              <li>🏞️ Nature Walks</li>
+              <li class="fs-6 text-decoration-underline text-success"><b>Locations List</b></li>
+              <li>Vizhinjam Beach</li>
+              <li>Ponmudi Hill Station</li>
+              <li>Padmanabhaswamy Temple</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
+
+            <!-- Collapse section -->
+            <div class="collapse" id="keralaseemore">
+              <ul class="list-unstyled small mb-3">
+                <li>Neyyar Dam</li>
+                <li>Kovalam Beach</li>
+                <li>Kuthiramalika Palace Museum</li>
+                <li>Udayagiri Fort</li>
+              </ul>
+            </div>
+
+                        <!-- See More button -->
+                        <button class="btn btn-outline-primary btn-sm" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#keralaseemore"
+                    aria-expanded="false"
+                    aria-controls="keralaseemore"
+                    id="seeMoreKeralaBtn">
+              See More
+            </button>
           </div>
         </div>
       </div>
@@ -262,29 +334,131 @@
       <div class="col-md-4">
         <div class="card h-100 shadow-sm border-0 package-card position-relative">
             
-          <div class="ribbon"><span>₹28,999</span></div>
+          <!-- <div class="ribbon"><span>₹28,999</span></div> -->
           <div class="card-img-top image-wrapper">
             <img src="images/dubai.jpg" alt="dubai Package" class="img-fluid w-100 h-100 object-fit-cover">
           </div>
 
           <div class="card-body text-center">
-            <h5 class="card-title">Dubai Adventure</h5>
-            <p class="card-text text-muted">4 Nights | Desert Safari & City Tour</p>
+            <h5 class="card-title">Half Day Package</h5>
+            <p class="card-text text-muted">1 Days | Customizable Days</p>
             <ul class="list-unstyled small mb-3">
-              <li>🏜️ Desert Safari</li>
-              <li>🛍️ Dubai Mall & Burj Khalifa</li>
-              <li>🚗 Private Transfers</li>
+              <li class="fs-6 text-decoration-underline text-success"><b>Locations List</b></li>
+              <li>Kanyakumari Beach</li>
+              <li>Thiruvalluvar Statue</li>
+              <li>Vivekananda Rock Memorial</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Book Now</a>
+
+            <!-- Collapse section -->
+            <div class="collapse" id="halfdayseemore">
+              <ul class="list-unstyled small mb-3">
+                <li>Padmanabapuram Palace</li>
+                <li>Mathoor Adiquet/Hanging Bridge</li>
+                <li>Thirparappu Waterfalls</li>
+                <li>Wax Museum</li>
+              </ul>
+            </div>
+
+                        <!-- See More button -->
+            <button class="btn btn-outline-primary btn-sm" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#halfdayseemore"
+              aria-expanded="false"
+              aria-controls="halfdayseemore"
+              id="seeMoreHalfDayBtn">
+              See More
+            </button>
+
           </div>
         </div>
       </div>
 
     </div>
   </div>
+    <div class="mt-5 text-md-end text-center px-5">
+  <p class="fs-6 fs-md-5 fst-italic text-dark mb-0">
+    Want to explore hidden gems of <strong class="text-dark">Kanyakumari</strong>? 
+    <a href="/kanyakumari-more-locations" class="text-primary text-decoration-underline ms-1">
+      Click here to see more Locations
+    </a>
+  </p>
+
+</div>
 </section>
 
+<!-- <section> -->
+  <!-- Popular Locations -->
+<!-- <div class="container my-5">
+  <h2 class="text-center mb-4">🌍 Popular Tour Locations</h2>
 
+  <div class="row"> -->
+    <!-- Visible Cards -->
+    <!-- <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="img/paris.jpg" class="card-img-top" alt="Paris">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="img/bali.jpg" class="card-img-top" alt="Bali">
+        <div class="card-body">
+          <h5 class="card-title">Bali</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="img/dubai.jpg" class="card-img-top" alt="Dubai">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Hidden Locations -->
+  <!-- <div class="row d-none" id="moreLocations">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="img/rome.jpg" class="card-img-top" alt="Rome">
+        <div class="card-body">
+          <h5 class="card-title">Rome</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="img/kyoto.jpg" class="card-img-top" alt="Kyoto">
+        <div class="card-body">
+          <h5 class="card-title">Kyoto</h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Call to Action and Buttons -->
+  <!-- <div class="text-center mt-4">
+    <p class="fs-5 fst-italic text-secondary">
+      ✨ Want to explore hidden gems of kanyakumari spots? Customize your dream trip today!
+    </p>
+
+    <button class="btn btn-outline-primary" onclick="document.getElementById('moreLocations').classList.remove('d-none'); this.style.display='none';">
+      Show More Locations
+    </button>
+
+    <a href="/custom-quote" class="btn btn-success ms-2">
+      Get a Custom Quote
+    </a>
+  </div>
+</div>
+
+</section> -->
 
   <!-- Gallery -->
   <!-- <section id="gallery" class="py-5">

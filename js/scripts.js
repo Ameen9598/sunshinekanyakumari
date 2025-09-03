@@ -68,3 +68,49 @@ window.addEventListener('scroll', function () {
       subNavbar.style.display = 'block'; // or classList.remove('hidden')
     }
   });
+
+  // popular packages see more button
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById('seeMoreBtn');
+    const collapseEl = document.getElementById('kanyakumariseemore');
+
+    // Listen for toggle events from Bootstrap
+    collapseEl.addEventListener('shown.bs.collapse', function () {
+      btn.textContent = 'See Less';
+    });
+
+    collapseEl.addEventListener('hidden.bs.collapse', function () {
+      btn.textContent = 'See More';
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById('seeMoreKeralaBtn');
+    const collapseEl = document.getElementById('keralaseemore');
+
+    // Listen for toggle events from Bootstrap
+    collapseEl.addEventListener('shown.bs.collapse', function () {
+      btn.textContent = 'See Less';
+    });
+
+    collapseEl.addEventListener('hidden.bs.collapse', function () {
+      btn.textContent = 'See More';
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById('seeMoreHalfDayBtn');
+    const collapseEl = document.getElementById('halfdayseemore');
+
+    // Listen for toggle events from Bootstrap
+    collapseEl.addEventListener('shown.bs.collapse', function () {
+      btn.textContent = 'See Less';
+    });
+
+    collapseEl.addEventListener('hidden.bs.collapse', function () {
+      btn.textContent = 'See More';
+    });
+  });
+
+
