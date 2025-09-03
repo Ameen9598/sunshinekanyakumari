@@ -318,3 +318,14 @@ body {
       max-height: 70px; /* Larger on desktops if needed */
     }
   }
+
+/* phone and mail link redirect start */
+#mainNavbar {
+  position: relative;
+  z-index: 1050; /* Higher than most elements */
+}
+
+.nav-link {
+  pointer-events: auto;
+}
+/* phone and mail link redirect end */
